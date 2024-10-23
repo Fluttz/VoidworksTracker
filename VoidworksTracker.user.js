@@ -46,7 +46,11 @@ if (document.URL.includes("games/voidworks")){
                 tz = " Local";
                 vwHour = (vwHour + timeZone)%24;
             }
-            if ((!use24)&&(vwHour < 12)){
+            if ((!use24)&&(vwHour < 0)){
+                vwHour = vwHour + 12;
+                if (vwHour == 0) vwHour = 12;
+                tz = " PM" + tz;
+            } else if ((!use24)&&(vwHour < 12)){
                 if (vwHour == 0) vwHour = 12;
                 tz = " AM" + tz;
             } else if (!use24){
