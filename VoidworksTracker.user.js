@@ -47,7 +47,6 @@ if (document.URL.includes("games/voidworks")){
                 vwHour = (vwHour + timeZone)%24;
             }
             if ((!use24)&&(vwHour < 12)){
-                vwHour = Math.abs(vwHour-12);
                 if (vwHour == 0) vwHour = 12;
                 tz = " AM" + tz;
             } else if (!use24){
