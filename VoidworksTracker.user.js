@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Voidworks Tracker
-// @version      1
+// @version      1.1
 // @description  Track when Voidworks becomes available
 // @author       Flutterz
 // @match        https://www.neopets.com/games/voidworks/*
